@@ -1,0 +1,73 @@
+:root {
+  --panel-header-backgroundColor: #f0f2f5;
+  --penel-headerHeight: 80px;
+  --icon-primaryColor: #54656f;
+  --panel-sidePadding: 16px;
+  --sidebar-topPadding: 10px;
+  --text-primaryColor: #111b21;
+  --text-secondaryColor: #3b4a54;
+  --text-smallColor: rgb(108, 107, 107);
+
+  --text-headingSize: 1.6rem;
+  --text-textSize: 1.3rem;
+
+  --dropdown-hoverColor: #f6f7f9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* typography */
+h2 {
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: var(--text-headingSize);
+  color: var(--text-primaryColor);
+}
+
+p {
+  /* font-weight: normal; */
+  font-size: var(--text-textSize);
+  color: var(--text-secondaryColor);
+}
+
+.p--ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.input--textbox {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  color: var(--text-primaryColor);
+  font-size: 15px;
+}
+
+.icon--wrapper > .MuiIconButton-root > .MuiSvgIcon-root {
+  font-size: 24px !important;
+  color: var(--icon-primaryColor);
+}
+
+.icon--wrapper-small > .MuiIconButton-root > .MuiSvgIcon-root {
+  font-size: 20px !important;
+}

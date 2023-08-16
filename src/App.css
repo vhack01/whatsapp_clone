@@ -1,0 +1,157 @@
+/* common */
+ul {
+  list-style: none;
+}
+
+/* app */
+
+.app {
+  background-color: #dadbd3;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__body {
+  background-color: #fff;
+  height: 97vh;
+  width: 97vw;
+  border-radius: 5px;
+  box-shadow: 3px 3px 11px #5858583d;
+  display: flex;
+  overflow: hidden;
+  /* justify-content: center; */
+}
+
+/******** sidebar ********/
+
+/* header */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.sidebar__header {
+  background-color: var(--panel-header-backgroundColor);
+  /* border: 1px solid grey; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--penel-headerHeight);
+  padding: 0 var(--panel-sidePadding);
+  border-right: 1px solid rgb(234, 234, 234);
+}
+.sidebar__header__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 15rem;
+}
+.sidebar__header__icons > .MuiIconButton-root > .MuiSvgIcon-root {
+  font-size: 24px !important;
+  color: var(--icon-primaryColor);
+}
+
+.chatbox__header-left-active-time {
+  color: var(--text-smallColor);
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    flex: 0.3;
+  }
+}
+
+/* sidebar search */
+.sidebar__search {
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar__searchbox {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--panel-header-backgroundColor);
+  border-radius: 4px;
+}
+.siderbar__search-input {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  color: var(--text-primaryColor);
+  font-size: 15px;
+  flex: 0.8;
+  padding: 5px 0;
+}
+
+.sidebar__search-unread-chat {
+  margin-left: 4px;
+}
+
+/* sidebar chats */
+.sidebar__chats {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.sidebar__chatbox {
+  padding: 10px var(--panel-sidePadding);
+  display: flex;
+  border-bottom: 1px solid #efefef;
+}
+
+.sidebar__chatbox:hover {
+  cursor: pointer;
+  background-color: var(--panel-header-backgroundColor);
+}
+
+.siderbar__chatbox__profile-image {
+  margin-right: 15px;
+}
+
+.sidebar__chat__message {
+  flex: 1;
+}
+.sidebar__chat__message-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.sidebar__chat__message-bottom {
+  width: 50ch;
+}
+
+/*********  dropdown ***********/
+
+.sidebar__header___vmore {
+  position: relative;
+}
+
+.sidebar__dropdown {
+  position: absolute;
+  top: 45px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+  z-index: 9;
+  box-shadow: 0px 0px 16px lightgrey;
+  padding: 1rem 0;
+}
+
+.sidebar__dropdown__list {
+  padding: 1rem 6rem 1rem 3rem;
+  white-space: nowrap;
+  text-align: left;
+  background-color: #fff;
+  color: var(--text-primaryColor);
+  font-size: 1.4rem;
+}
+
+.sidebar__dropdown__list:hover {
+  cursor: pointer;
+  background-color: var(--dropdown-hoverColor);
+}

@@ -1,0 +1,70 @@
+.login {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login__container {
+  height: 50rem;
+  width: 50rem;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px lightgrey;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__logo {
+  width: 15rem;
+}
+
+.login__btn {
+  background-color: #32d951 !important;
+  color: white !important;
+  font-size: 1.2rem !important;
+  margin-top: 2rem !important;
+}
+
+.login__btn:hover {
+  background-color: #1eb63a;
+}
+
+@media screen and (min-width: 768px) {
+  .login__container {
+    width: 50rem;
+  }
+}
+
+.login__loader {
+  -webkit-animation: loginLoader 2s linear infinite;
+  animation: loginLoader 1.5s linear infinite;
+}
+
+@-webkit-keyframes loginLoader {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes loginLoader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.search__chat__clear-icon {
+  cursor: pointer;
+}
